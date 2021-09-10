@@ -28,7 +28,7 @@ export default createSchema({
     initiative,
     resources,
     Coordinators,
-    Leaderships,
+    //Leaderships,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

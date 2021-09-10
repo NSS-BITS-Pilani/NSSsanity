@@ -9,6 +9,12 @@ export default {
       type: 'string',
     },
     {
+      name: 'srno',
+      title: 'Sr No.',
+      type: 'number',
+      description: 'Enter serially starting from 1.'
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
