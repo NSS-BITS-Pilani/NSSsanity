@@ -8,6 +8,16 @@
  *    type: 'blockContent'
  *  }
  */
+import React from 'react'
+
+const centerNormal = props => (
+  <span style={{textAlign:'center', fontSize:"24px"}}>{props.children}</span>
+);
+
+const centerHeading = props => (
+  <span style={{textAlign:'center'}}>{props.children}</span>
+);
+
 export default {
   title: 'Block Content',
   name: 'blockContent',
@@ -26,7 +36,21 @@ export default {
         {title: 'H2', value: 'h2'},
         {title: 'H3', value: 'h3'},
         {title: 'H4', value: 'h4'},
-        {title: 'Quote', value: 'blockquote'},
+        { title: 'Quote', value: 'blockquote' },
+        {
+          title: 'Center',
+          value: 'center',
+          blockEditor: {
+            render: centerNormal
+          }
+        },
+        {
+          title: 'Heading (center)',
+          value: 'centerHeading',
+          blockEditor: {
+            render: centerHeading
+          }
+        },
       ],
       lists: [{title: 'Bullet', value: 'bullet'}],
       // Marks let you mark up inline text in the block editor.
