@@ -1,6 +1,6 @@
 export default {
-  name: 'leader',
-  title: 'Leaderships',
+  name: 'prof',
+  title: 'Professors Incharge',
   type: 'document',
   fields: [
     {
@@ -9,15 +9,29 @@ export default {
       type: 'string',
     },
     {
-      name: 'imgurl',
-      title: 'Image URL',
-        type: 'string',
-      description: '288*288 px'
+      name: 'srno',
+      title: 'Sr No.',
+      type: 'number',
+      description: 'Enter serially starting from 1.'
     },
     {
-      name: 'linkedin',
-      title: 'Linkedin profile link',
-      type: 'string'
+      name: 'profilepic',
+      title: 'Profile Picture',
+      type: 'image',
+      description: 'Has to be SQUARE',
+    },
+    {
+      name: 'bitsprofile',
+      title: 'BITS profile link',
+        type: 'string',
+      description: 'Including https:// is a must'
+    },
+    {
+          name: 'designation',
+          title: 'Designation',
+          type: 'string',
+          description: 'The gray text on cards'
+    
     }
   ],
 
