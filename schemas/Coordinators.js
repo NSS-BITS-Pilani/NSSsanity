@@ -1,6 +1,6 @@
 export default {
   name: 'coordinator',
-  title: 'Co-ordinator',
+  title: 'Core Team',
   type: 'document',
   fields: [
     {
@@ -18,10 +18,7 @@ export default {
       name: 'profilepic',
       title: 'Profile Picture',
       type: 'image',
-      description: 'Square',
-      options: {
-        hotspot: true,
-      },
+      description: 'Has to be SQUARE',
     },
     {
       name: 'linkedin',
