@@ -23,6 +23,12 @@ export default {
       title: 'Logo',
       type: 'image',
     },
+    {
+      name: 'eventCount',
+      title: 'Ongoing Event Count',
+      description: 'Mention the ongoing event count in this field, for e.g., blood donor count in case of BDC Event.',
+      type: 'number'
+    }
   ],
 
   preview: {
